@@ -2,21 +2,29 @@
 
 **Cloud & Infrastructure Lead | AWS | Azure | DevOps Engineer**
 
-I architect scalable cloud infrastructure and lead DevOps transformations, primarily on AWS and Azure. I build end-to-end solutions from infrastructure to applications, focusing on automation, reliability, and measurable business impact.
+I build reliable cloud platforms and lead engineering teams from early-stage startups to enterprise SaaS. Seven years across founding-engineer roles, healthcare infrastructure at scale, and end-to-end DevOps transformation at a B2B SaaS company. I like automation that solves real problems, observability that actually reduces incidents, and honest trade-offs over clever abstractions.
 
-## 🎯 What I Do
+## 🎯 What I Work On
 
 **Cloud & Infrastructure:**
-- Design and implement multi-account AWS platforms using Control Tower and Well-Architected principles
-- Build production CI/CD pipelines with integrated security scanning that reduce deployment time by 50%
-- Establish SLO-driven observability frameworks that improve incident response by 40%
-- Lead infrastructure migrations with proven cost savings (20%+) and reliability improvements
+- Multi-account AWS landing zones (Control Tower, SCPs, account vending, IAM guardrails)
+- AWS-primary / Azure-secondary hybrid strategy with cross-VPN and DR, and FinOps governance (tagging taxonomy, rightsizing, Savings Plans, Infracost gates)
+- Led end-to-end on-premises → AWS migration of 10+ servers and 5 databases (IBM DB2, PostgreSQL, SQL Server), uptime from 95% to 99.9%, 20% cost reduction, environment provisioning from 3 weeks to under 1 hour via IaC.
+- Compliance-aligned across GDPR, HIPAA-equivalent, ISO 27001-aligned, and UAE PDPL-aware workloads.
+
+**DevOps, CI/CD & SRE:**
+- Built GitHub Actions pipelines with Snyk, Trivy, and CodeQL security gates - replaced monthly manual releases with daily deployments, 50% faster lead time, 35% fewer production incidents
+- IaC via reusable Terraform modules and CloudFormation StackSets with GitOps peer-review and tfsec/Infracost gates
+- Established SLO frameworks across 10+ production services (API latency, error rate, availability), error budgets, on-call rotation, and blameless post-mortems - 40% MTTR reduction, 30% fewer repeat incidents
+- Reduced manual operational toil by 80% through Python and Bash automation pipelines.
 
 **Application Development:**
-- Build serverless applications using AWS Amplify, AppSync, Lambda, and DynamoDB
-- Develop React/TypeScript frontends integrated with AWS services
-- Create Node.js backends with GraphQL APIs and REST endpoints
-- Implement data transformation workflows for operational analytics
+- Multi-tenant SaaS platform on AWS using AWS ECS, AppSync (GraphQL), Lambda, Cognito, REST APIs and DynamoDB with React/TypeScript frontend via Amplify
+- Built custom AI automation agents using the Claude API and OpenAI API for infrastructure workflows, internal tooling, and code review pipelines
+- Frontend deployment on Vercel (edge middleware, ISR, preview environments)
+- Database layer includes PostgreSQL on Supabase (row-level security, realtime subscriptions)
+- Data migration scripting in Python/Bash: ETL pipelines, schema transformation, and validation across IBM DB2, SQL Server, and PostgreSQL
+- Early enterprise adopter of AWS SaaS Boost, engaged directly with the AWS product team on roadmap discussions and cost optimisation feedback from real production workloads.
 
 ## 💼 Real Impact (Not Buzzwords)
 
@@ -27,6 +35,10 @@ I architect scalable cloud infrastructure and lead DevOps transformations, prima
 - **Serverless web application** supporting multi-tenant architecture with Amplify + AppSync
 - **Reduced manual operations by 30%** through automation and process improvement
 
+## 💼 Background
+Founding engineer at JustDoc (healthcare startup, acquired by Netmeds.com), scaled from 80 to 1,200+ daily orders without proportional headcount growth, building reliability and operational systems from scratch. That experience shapes how I approach infrastructure: automation over heroics, runbooks over tribal knowledge, systems that survive the person who built them.
+At Formpak I took a legacy on-premise B2B SaaS product through full cloud transformation: AWS landing zone, multi-tenant SaaS architecture, SRE practices, FinOps governance, and engineering team scaled from 4 to 10 across UK, India, and China.
+
 ## 🛠️ Tech Stack
 
 ### Cloud & Infrastructure
@@ -34,8 +46,8 @@ I architect scalable cloud infrastructure and lead DevOps transformations, prima
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
-**AWS Services:** EC2, S3, RDS, Lambda, ECS, EKS, CloudFormation, Control Tower, Amplify, AppSync, API Gateway, DynamoDB, Cognito, CloudWatch, IAM, VPC
-**Azure:** VMs, Storage, Networking, Azure DevOps 
+**AWS Services:** EC2, ECS, EKS, Lambda, RDS, S3, VPC, IAM, Control Tower, CloudWatch, GuardDuty, Cognito, AppSync, Amplify, SQS, SNS, Security Hub, Cost Explorer, OpenSearch
+**Azure:** VMs, Front Door, Web Apps, Entra ID, Key Vault, Defender, Application Insights, DevOps Pipelines 
 **Containers:** Docker, ECS, EKS | Kubernetes
 
 ### DevOps & Automation
@@ -44,8 +56,8 @@ I architect scalable cloud infrastructure and lead DevOps transformations, prima
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
 
 **CI/CD:** GitHub Actions (primary), Azure DevOps  
-**IaC:** AWS CloudFormation, Terraform
-**Observability:** New Relic, CloudWatch, CloudTrail  
+**IaC:** Terraform (primary), AWS CloudFormation
+**Observability:** New Relic APM, CloudWatch, Azure Application Insights, PagerDuty, Datadog (familiar), Prometheus & Grafana (familiar), SLIs/SLOs/Error budgets
 **Security:** Snyk (SCA/SAST), AWS IAM, SCPs, GuardDuty  
 **Automation:** Bash scripting, Python for automation
 
@@ -57,9 +69,10 @@ I architect scalable cloud infrastructure and lead DevOps transformations, prima
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat&logo=graphql&logoColor=white)
 
 **Frontend:** React, TypeScript, JavaScript, AWS Amplify UI  
-**Backend:** Node.js, Python, GraphQL (AppSync), REST APIs, Lambda  
-**Databases:** SQL Server (primary), RDS (PostgreSQL/MySQL), DynamoDB  
+**Backend:** Bash, Node.js, Python, GraphQL (AppSync), REST APIs, Lambda  
+**Databases:** SQL Server (primary), RDS (PostgreSQL/MySQL), DynamoDB, Supabase (PostgreSQL, RLS, realtime)
 **Data:** SQL analytics, ETL workflows, operational data transformation
+**AI & Productivity:** Claude API, OpenAI API, GitHub Copilot, AI-assisted code review and infra automation
 
 ## 🌱 Currently Learning
 
@@ -68,7 +81,7 @@ I believe in continuous learning and staying current with industry trends:
 - **Data Orchestration:** Building ELT pipelines with Kestra and PostgreSQL for modern data workflows
 - **AI/ML Integration:** Exploring LLM frameworks and AI-driven automation for DevOps workflows
 - **Kubernetes in Production:** Moving beyond ECS/EKS basics to advanced K8s patterns, Helm, and operators
-- **Terraform:** Transitioning from CloudFormation to multi-cloud IaC with modules and workspaces
+- **Terraform:** Deepening into module composition, workspace strategies, policy-as-code with Sentinel/OPA
 - **Azure Expansion:** Deepening Azure services knowledge for multi-cloud strategies
 
 ## 💡 My Approach
